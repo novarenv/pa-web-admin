@@ -1,4 +1,4 @@
-export default [
+const nav = [
   {
     _tag: 'CSidebarNavItem',
     name: 'Dashboard',
@@ -75,3 +75,4 @@ export default [
   }
 ]
 
+export default nav
