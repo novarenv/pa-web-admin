@@ -38,8 +38,34 @@ const Widgets = React.lazy(() => import('./views/widgets/Widgets'));
 const Users = React.lazy(() => import('./views/users/Users'));
 const User = React.lazy(() => import('./views/users/User'));
 
+// River Trash
+const Prediction = React.lazy(() => import('./views/map/Prediction'));
+const Risk = React.lazy(() => import('./views/map/Risk'));
+const Total = React.lazy(() => import('./views/map/Total'));
+const ML = React.lazy(() => import('./views/ml/CNN'));
+const CNN = React.lazy(() => import('./views/ml/CNN'));
+const DNN = React.lazy(() => import('./views/ml/DNN'));
+const RiskMap = React.lazy(() => import('./views/ml/RiskMap'));
+const Docs = React.lazy(() => import('./views/docs/Docs'));
+const Scripts = React.lazy(() => import('./views/scripts/Scripts'));
+const Local = React.lazy(() => import('./views/local/Local'));
+
 const routes = [
   { path: '/', exact: true, name: 'Home' },
+  // River Trash
+  { path: '/map', name: 'Map', component: Prediction, exact: true },
+  { path: '/map/prediction', name: 'Prediction', component: Prediction },
+  { path: '/map/risk', name: 'Risk', component: Risk },
+  { path: '/map/total', name: 'Total', component: Total },
+  { path: '/ml', name: 'ML', component: ML, exact: true },
+  { path: '/ml/cnn', name: 'CNN', component: CNN },
+  { path: '/ml/dnn', name: 'DNN', component: DNN },
+  { path: '/ml/riskmap', name: 'Risk Mapping', component: RiskMap },
+  { path: '/docs', name: 'Docs', component: Docs },
+  { path: '/scripts', name: 'Scripts', component: Scripts },
+  { path: '/local', name: 'Localization', component: Local },
+
+  // Default
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
   { path: '/theme', name: 'Theme', component: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', component: Colors },

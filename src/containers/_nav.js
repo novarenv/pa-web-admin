@@ -51,7 +51,7 @@ export default [
       {
         _tag: 'CSidebarNavItem',
         name: 'Risk Mapping',
-        to: '/ml/riskMapping',
+        to: '/ml/riskmap',
       },
     ],
   },
@@ -70,7 +70,7 @@ export default [
   {
     _tag: 'CSidebarNavItem',
     name: 'Localization',
-    to: '/docs',
+    to: '/local',
     icon: 'cil-notes'
   }
 ]
