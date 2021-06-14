@@ -6,6 +6,12 @@ const nav = [
     icon: 'cil-speedometer'
   },
   {
+    _tag: 'CSidebarNavItem',
+    name: 'Images',
+    to: '/images',
+    icon: 'cil-notes'
+  },
+  {
     _tag: 'CSidebarNavTitle',
     _children: ['Menu']
   },
