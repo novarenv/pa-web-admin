@@ -6,54 +6,26 @@ const nav = [
     icon: 'cil-speedometer'
   },
   {
+    _tag: 'CSidebarNavItem',
+    name: 'Images',
+    to: '/images',
+    icon: 'cil-notes'
+  },
+  {
     _tag: 'CSidebarNavTitle',
     _children: ['Menu']
   },
   {
-    _tag: 'CSidebarNavDropdown',
+    _tag: 'CSidebarNavItem',
     name: 'Map',
-    route: '/map',
+    to: '/map/prediction',
     icon: 'cil-map',
-    _children: [
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Prediction',
-        to: '/map/prediction',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Risk',
-        to: '/map/risk',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Total',
-        to: '/map/total',
-      },
-    ],
   },
   {
-    _tag: 'CSidebarNavDropdown',
-    name: 'Maching Learning',
-    route: '/ml',
-    icon: 'cil-cursor',
-    _children: [
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'CNN',
-        to: '/ml/cnn',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'DNN',
-        to: '/ml/dnn',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Risk Mapping',
-        to: '/ml/riskmap',
-      },
-    ],
+    _tag: 'CSidebarNavItem',
+    name: 'Machine Learning',
+    to: '/ml/riskmap',
+    icon: 'cil-cursor'
   },
   {
     _tag: 'CSidebarNavItem',
@@ -67,12 +39,6 @@ const nav = [
     to: '/scripts',
     icon: 'cil-notes'
   },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Localization',
-    to: '/local',
-    icon: 'cil-notes'
-  }
 ]
 
 export default nav

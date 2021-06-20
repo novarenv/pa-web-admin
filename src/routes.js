@@ -39,6 +39,7 @@ const Users = React.lazy(() => import('./views/users/Users'));
 const User = React.lazy(() => import('./views/users/User'));
 
 // River Trash
+const Images = React.lazy(() => import('./views/images/Images'));
 const Prediction = React.lazy(() => import('./views/map/Prediction'));
 const Risk = React.lazy(() => import('./views/map/Risk'));
 const Total = React.lazy(() => import('./views/map/Total'));
@@ -53,6 +54,7 @@ const Local = React.lazy(() => import('./views/local/Local'));
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   // River Trash
+  { path: '/images', exact: true, name: 'Images', component: Images },
   { path: '/map', name: 'Map', component: Prediction, exact: true },
   { path: '/map/prediction', name: 'Prediction', component: Prediction },
   { path: '/map/risk', name: 'Risk', component: Risk },
